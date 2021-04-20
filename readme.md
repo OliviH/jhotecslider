@@ -1,10 +1,22 @@
-## Comment configurer Rollup pour des bundles toujours parfaits
+# Beautiful gallery flexbox
+![alt text](https://github.com/OliviH/flexbox-gallery-slider/blob/master/Capture-20210419184441-766x652.png?raw=true)
 
-Le lien est dans la description
+## Javascript gallery
 
-> [ -> Le lien est ici <- ](https://buzut.net/configurer-rollup-bundles-esm-cjs/)
+```javascript
+if(jhslider) jhslider.init(HtmlElement, loop: Boolean) // loop default value = false
 
-## TO USE
+jhslider.autoSlide(true|false|1000) // true -> interval = 5000ms or set time in millisecondes
+
+jhslider.stop() // stop auto slide or use jg.autoSlide(false)
+
+jhslider.loop(true|false) // set or unset galery loop
+
+jhslider.setInfosElements(InfoPositionItemSelected: HtmlElement, InfoTotalItems: HtmlElement)
+
+```
+
+### TO USE BUNDLER
 
 ```bash
 > yarn # to install
