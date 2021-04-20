@@ -1,5 +1,5 @@
 # Beautiful gallery flexbox
-![alt text](https://github.com/OliviH/flexbox-gallery-slider/blob/master/Capture-20210419184441-766x652.png?raw=true)
+![alt text](https://github.com/OliviH/flexbox-gallery-slider/blob/master/Capture-20210420152636-698x632.png?raw=true)
 
 ## Javascript gallery
 
