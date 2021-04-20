@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Flexbox Slider</h1>
+    <div class="gallery" id="id_1">
+    <div class="wrap">
+      <button data-btn="prev">&laquo;</button>
+      <div class="sticky">♥</div>
+      <div class="scroller">
+        <ul class="items">
+          <li class="item" style="background-image:url(https://images.pexels.com/photos/1612351/pexels-photo-1612351.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-1612351.jpg&fm=jpg);">Chalets</li>
+          <li class="item" style="background-image:url(https://images.pexels.com/photos/3610006/pexels-photo-3610006.jpeg?cs=srgb&dl=pexels-castorly-stock-3610006.jpg&fm=jpg);">Douceur</li>
+          <li class="item" style="background-image:url(https://images.pexels.com/photos/3771110/pexels-photo-3771110.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3771110.jpg&fm=jpg);">Recevoir</li>
+        </ul>
+      </div>
+      <button data-btn="next">&raquo;</button>
+    </div>
+    <div class="gallery__nav">
+        <ul>
+            <li class="selected">
+                <img src="https://images.pexels.com/photos/1612351/pexels-photo-1612351.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-1612351.jpg&fm=jpg" alt="">
+            </li>
+            <li>
+                <img src="https://images.pexels.com/photos/3610006/pexels-photo-3610006.jpeg?cs=srgb&dl=pexels-castorly-stock-3610006.jpg&fm=jpg" alt="">
+            </li>
+            <li>
+                <img src="https://images.pexels.com/photos/3771110/pexels-photo-3771110.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3771110.jpg&fm=jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="gallery__counter">
+        <div><span class="gallery__counter-pos"></span> / <span class="gallery__counter-total"></span></div>
+    </div>
+    </div>
+    <h3 style="color: #fff; text-align: center; font-weight: 100; font-style: italic; font-size: .8em;">Olivier Heimerdinger</h3>
+<script src="./js/jhotecslider.esm.min.js"></script>
+<script>
+    if(jhslider){
+        jhslider.init(document.querySelector("#id_1"), true)
+        jhslider.setInfosElements(document.querySelector("#id_1 .gallery__counter-pos"),document.querySelector("#id_1 .gallery__counter-total"))
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Sass Variables
+   ========================================================================== */
+
+/* ==============
+    COLORS
+   ============== */
+
+// Main color
+$white: #fff;
+$black: #000;
+$greenNavLeftIntranet: #82b600;
+$darkgreenColor: #008991;
+$globalGrey: #808080;
+$greenNavLeft: #75a300;
+$greenMain: #82b600;
+
+// Main color contrasted
+$contrastGreenNavLeftIntranet: #3d6d04;
+$contrastDarkGreenColor: #007178;
+$contrastGlobalGrey: #676767;
+$contrastGreenNavLeft: #3d6d04;
+$contrastGreenMain: #82b600;
+$darkgreenFilter: #2d684f;
+
+// Others colors
+$greyFooterBottom: #404040;
+$blueHeader: #00747a;
+$greenNavLeftIntranet: #82b600;
+$blueHeaderTop: #7e93a7;
+$greybg: #ebebeb;
+$greyFooter: #262626;
+$greyFooterBottom: #404040;
+$greyBorder: #d9d9d9;
+$greenLogo: #008890;
+$blueHeaderText: #748f9f;
+$greyListColor: #b2b2b2;
+$darkgreenColor: #008991;
+$breadcrumBorderColor: #cccccc;
+$globalGrey: #808080;
+$inputGrey: #f0f0f0;
+$btnBlueHover: #00a3a0;
+$colorRedError: #ff3521;
+$turkishVerbatimPush: #49ceaa;
+$purple: #917ed6;
+$alto-grey: #e0e0e0;
+$silver-chalice: #a6a6a6;
+$outer-space: #2E3738;
+$sirocco: #737778;
+$mercury: #E1E1E1;
+$dusty-gray: #979797;
+$puerto-rico: #53C1A3;
+$limed-spruce: #415153;
+
+/* ==============
+	Fonts
+   ============== */
+
+$OpenSansSemiBoldItalic: 'OpenSans-SemiboldItalic', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$OpenSansSemiBold: 'OpenSans-Semibold', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$OpenSansRegular: 'OpenSans-Regular', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$OpenSansItalic: 'OpenSans-Italic', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$OpenSansSemiLightItalic: 'OpenSans-LightItalic', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$OpenSansSemiLight: 'OpenSans-Light', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$OpenSansBoldItalic: 'OpenSans-BoldItalic', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$OpenSansBold: 'OpenSans-Bold', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$OpenSansExtraBoldItalic: 'OpenSans-ExtraBoldItalic', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$OpenSansExtraBold: 'OpenSans-ExtraBold', 'Helvetica Neue', Helvetica, sans-serif, bold;
+
+$DINProCond: 'DINPro-Cond', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$DINProCondBlack: 'DINPro-CondBlack', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$DINProCondBlackIta: 'DINPro-CondBlackIta', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$DINProCondBold: 'DINPro-CondBold', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$DINProCondBoldIta: 'DINPro-CondBoldIta', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$DINProCondIta: 'DINPro-CondIta', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$DINProCondLight: 'DINPro-CondLight', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$DINProCondLightIta: 'DINPro-CondLightIta', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$DINProCondMediIta: 'DINPro-CondMediIta', 'Helvetica Neue', Helvetica, sans-serif, bold;
+$DINProCondMedium: 'DINPro-CondMedium', 'Helvetica Neue', Helvetica, sans-serif, bold;
+
+
+/* ==============
+	URL IMAGES
+   ============== */
+
+$dirImages: "../images/";
+
+/* ==============
+	min-size
+	=> _common.scss
+   ============== */
+$min-320: 320px;
+
+/* ==============
+	breakpoints
+   ============== */
+
+$breakpoints: (
+  'mobile': ('min': 0, 'max': 768px),
+  'tablet': ('min': 769px, 'max': 1024px),
+  'desktop': ('min': 1025px, 'max': 99999px),
+);
+
+//map-get($breakpoints, $value)
+
+/* ==============
+	Media-queries
+   ============== */
+
+$max1024: "(max-width : #{map-get(map-get($breakpoints, 'tablet'), 'max')})";
+$min1025: "(min-width : #{map-get(map-get($breakpoints, 'desktop'), 'min')})";
+
+$max768: "(max-width : #{map-get(map-get($breakpoints, 'mobile'), 'max')})";
+$min769: "(min-width : #{map-get(map-get($breakpoints, 'tablet'), 'min')})";
+
+$max992: "(max-width : #{map-get(map-get($breakpoints, 'mobile'), 'max')})";
+$min993: "(min-width : #{map-get(map-get($breakpoints, 'tablet'), 'min')})";
+
+$min1900: "(min-width : 1900px)";
+$max1899: (max-width : 1899px);
+
+/* ==============
+	channel article layout
+   ============== */
+$container-margins: (
+  normal: 9%,
+  big: 17%,
+  mobile: 20px,
+);
+
+$container-margins-between: (
+  desktop: 80px,
+  mobile: 60px,
+);
